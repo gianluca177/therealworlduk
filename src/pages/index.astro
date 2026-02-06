@@ -1,17 +1,29 @@
 ---
-
+const projectName = "The Real World Uk";
+const updatedAt = new Date().toISOString();
 ---
 
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{projectName} – Deployment Test</title>
+  </head>
+  <body style="font-family: system-ui, -apple-system, sans-serif; padding: 2rem;">
+    <h1>The Real World UK</h1>
+    <p>✅ Astro is live.</p>
+    <p>✅ GitHub → Cloudflare Pages connection working.</p>
+
+    <hr />
+
+    <p>
+      <strong>Last updated:</strong><br />
+      {updatedAt}
+    </p>
+
+    <p style="margin-top: 2rem; opacity: 0.6;">
+      Edit this file in Working Copy, commit, and push to test deployments.
+    </p>
+  </body>
 </html>
